@@ -12,9 +12,9 @@ def matrixmul(a:list[list[int|float]],
     
     for rowIndex_a in range(len(a)):
         row_c = []
-        for colIndex_b in range(len(a[0])):
+        for colIndex_b in range(len(b[0])):
             dot = 0
-            for k in range(len(b[0])):
+            for k in range(len(a[0])):
                 dot += a[rowIndex_a][k] * b[k][colIndex_b]
             row_c.append(dot)
         c.append(row_c)
